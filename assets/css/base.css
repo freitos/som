@@ -22,7 +22,7 @@ body {
     display: flex;
     gap: 50px;
     justify-content: center;
-    margin-left: 15%;
+    margin-left: 11%;
 }
 
 .menu a {
@@ -43,16 +43,50 @@ body {
     height: 10px;
 }
 .profile{
-    margin-left: -100px;
+    margin-left: -150px;
     margin-right: 50px;
 }
 .profile img{
-    height: 50px;
+    height: 40px;
 }
 .kart img{
-    height: 60px;
+    height: 45px;
 }
-
+.slider{
+    overflow: hidden;
+}
+.slider input{
+    display: none;
+}
+.slider-area{
+    width: 200%;
+    display: flex;
+    transition: all ease .5s;
+}
+.slider-item{
+    width: 100%;
+}
+.slider-item img{
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+.slider-nav{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.slider-nav label{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: .2rem solid #8B4513;
+    transition: all ease .5s;
+}
 .banner {
     height: 500px;
     margin: 0;
@@ -60,6 +94,18 @@ body {
 .banner img{
     width: 100%;
     height: 500px;
+}
+#slider-1:checked~.slider-area{
+    margin-left: 0%;
+}
+#slider-2:checked~.slider-area{
+    margin-left: -100%;
+}
+#slider-1:checked~.slider-nav .n1{
+    background-color: #8B4513;
+}
+#slider-2:checked~.slider-nav .n2{
+    background-color: #8B4513;
 }
 .produtos-section {
     text-align: center;
@@ -93,7 +139,6 @@ body {
 }
 .produto p{
     margin-top: 5px;
-    
     color: #8B4513;
     font-size: 20px;
     font-weight: bold;
@@ -101,10 +146,20 @@ body {
 .rodape{
     text-align: center;
     background-color: #000;
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
 }
 .rodape p{
-    margin-top:-20px;
+    margin-top:50px;
     color: #F4D03F;
     font-weight: bold;
+    font-size: 20px;
+}
+.social{
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.social img{
+    margin-right: 40px;
+    margin-left: 40px;
 }
