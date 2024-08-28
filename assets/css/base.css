@@ -43,8 +43,8 @@ body {
     height: 10px;
 }
 .profile{
-    margin-left: -150px;
-    margin-right: 50px;
+    margin-left: -170px;
+    margin-right: 100px;
 }
 .profile img{
     height: 40px;
@@ -126,7 +126,7 @@ body {
     gap: 100px;
 }
 .produto {
-    height: 345px;
+    height: 375px;
     width: 310px;
     background-color:#F4D03F;
 }
