@@ -18,11 +18,11 @@ body {
     margin-top: 15px;
 }
 
-.menu {
+.menu{
     display: flex;
-    gap: 50px;
+    gap: 80px;
     justify-content: center;
-    margin-left: 11%;
+    margin-left: 15%;
 }
 
 .menu a {
@@ -129,19 +129,28 @@ body {
     height: 375px;
     width: 310px;
     background-color:#F4D03F;
+    border-radius: 10px;
+}
+.produto a{
+    text-decoration: none;
 }
 .produto img{
-    margin-top: 4px ;
+    margin-top: 5px ;
     background-color: #ccc;
     width: 300px;
     height: 300px;
-
+    border-radius: 10px;
 }
 .produto p{
     margin-top: 5px;
     color: #8B4513;
     font-size: 20px;
     font-weight: bold;
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
 }
 .rodape{
     text-align: center;
