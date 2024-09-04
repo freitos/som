@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #F4D03F;
+    padding:15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 150px;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #8B4513;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.search-cart {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.search-cart img {
+    height: 10px;
+}
+.profile{
+    margin-left: -170px;
+    margin-right: 100px;
+}
+.profile img{
+    height: 40px;
+}
+.kart img{
+    height: 45px;
+}
+.container{
+    text-align: center;
+    align-items: center;
+}
+.container h1{
+    color: #8B4513;
+    font-weight: bold;
+    font-size: 25px;
+}
+.buttons {
+            display: flex;
+            gap:315px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            display: row;
+            justify-content: center;
+        }
+
+        .buttons a {
+            background-color: transparent;
+            border: 2px solid #8B4513;
+            border-radius: 15px;
+            padding: 10px 20px;
+            color: #8B4513;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            
+        }
+
+        .buttons a:hover {
+            background-color: #8B4513;
+            color: white;
+        }
+        .produtos {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            margin-bottom: 50px;
+        }
+        .produto {
+            height: 375px;
+            width: 310px;
+            background-color:#F4D03F;
+            border-radius: 10px;
+        }
+        .produto a{
+            text-decoration: none;
+        }
+        .produto img{
+            margin-top: 5px ;
+            background-color: #ccc;
+            width: 300px;
+            height: 300px;
+            margin-left: 5px;
+            border-radius: 10px;
+        }
+        .produto p{
+            margin-top: 5px;
+            color: #8B4513;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .rodape{
+            text-align: center;
+            background-color: #000;
+            padding: 1rem 1rem;
+        }
+        .rodape p{
+            margin-top:50px;
+            color: #F4D03F;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .social{
+            margin-top: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .social img{
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+        
