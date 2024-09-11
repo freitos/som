@@ -78,40 +78,43 @@ body {
     text-align: left;
     color: #8B4513;
     width: 1000px;
+    font-weight: bolder;
     }
     .contatos .email{
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #8B4513;
-        border-radius: 5px;
-        width: 1000px;
-        height: 50px;
-        }
+        margin-top: 10px;
+        width: 52.5%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #8B4513;
+    border-radius: 5px;
+    }
    
 .contatos .mensagem{
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #8B4513;
     border-radius: 5px;
-    width: 1000px;
+    width: 52.5%;
     height: 200px;
+    font-family: sans-serif;
     }
     
 .contatos button{
-    width: 100px;
-    background-color: #8B4513;
-    color: white;
-    border-color: #8B4513;
+    width: 10%;
+    padding: 12px;
+    background-color: #f1c232;
+    border: none;
     border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
     cursor: pointer;
-    align-items: center;
-    height: 30px;
+    font-weight: bolder;
     }
     
  .contatos button:hover {
-    background-color: white;
+    background-color: #8B4513;
     border-color: #8B4513;
-    color: #8B4513;
+    color: #fff;
     }
 
     .rodape {

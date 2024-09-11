@@ -5,36 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Conta</title>
-    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    <link rel="stylesheet" href="./assets/css/contato.css">
 </head>
 
 <body>
-
+    
     <div class="container">
-        <div class="form-container">
-            <a href="index.html" class="home-icon"><img src="./assets/img/Home.svg" alt=""></a>
-            <h1>Criar Conta</h1>
-            <form action="#">
-                <label for="nome">Digite seu nome completo:</label>
-                <input type="text" id="nome" name="nome" required>
+        <div class="content first-content">
+            <div class="first-column">
+                <a href="index.html" class="home-icon"><img src="./assets/img/Home.png" alt=""></a>
+                <h1>Criar Conta</h1>
+                <form action="#">
+                    <label for="nome">Digite seu nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                
+                    <label for="email">Digite seu email:</label>
+                    <input type="email" class="email" name="email" placeholder="Digite seu email" required>
 
-                <label for="email">Digite seu email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="senha">Digite sua senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="***********" required>
 
-                <label for="senha">Digite sua senha:</label>
-                <input type="password" id="senha" name="senha" required>
+                    <label for="confirmar-senha">Confirme sua senha:</label>
+                    <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="***********" required>
 
-                <label for="confirmar-senha">Confirme sua senha:</label>
-                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+                    <center><button type="submit" href="index.html">Criar</button></center>
+                </form>
+                <a href="" id="signin" class="btn-second" underline>Já tenho conta</a>
+            </div>
+            <div class="second-column">
+                <div class="image-container">
+                    <img src="./assets/img/logo.png" alt="SP Logo">
+                </div>
+            </div>
+        <div class="content second-content">
+            <div class="first-column">
+                <a href="index.html" class="home-icon"><img src="./assets/img/Home.png" alt=""></a>
+                <h1>Criar Conta</h1>
+                <form action="#">
+                    <label for="email">Digite seu email:</label>
+                    <input type="email" class="email" name="email" placeholder="Digite seu email" required>
 
-                <button type="submit">Criar</button>
-            </form>
-            <a href="login.html" class="login-link">Já tenho conta</a>
-        </div>
-        <div class="image-container">
-            <img src="./assets/img/logo.png" alt="SP Logo">
+                    <label for="senha">Digite sua senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="***********" required>
+                    <center><button type="submit" a href="index.html">Criar</button></center>
+                    <center><a href="" id="signup" class="btn-second" underline>Não tenho conta</a></center>
+                </form>
+            </div>
+        <div class="second-column">
+            <div class="image-container">
+                <img src="./assets/img/logo.png" alt="SP Logo">
+            </div>
         </div>
     </div>
 </body>
-
+<script href="./assets/js/script.js"></script>
 </html>
