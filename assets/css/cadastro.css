@@ -46,6 +46,9 @@ body {
   .first-column{
     display: flex;
 }
+.first-content{
+    display: flex;
+}
 .first-content .first-column{
     z-index: 11;
 }
