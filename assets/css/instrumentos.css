@@ -71,8 +71,7 @@ body {
         }
 
         .buttons a {
-            background-color: transparent;
-            border: 2px solid #8B4513;
+            background-color: #F4D03F;
             border-radius: 15px;
             padding: 10px 20px;
             color: #8B4513;
@@ -80,12 +79,13 @@ body {
             font-size: 16px;
             transition: background-color 0.3s, color 0.3s;
             text-decoration: none;
+            font-weight: bold;
             
         }
 
         .buttons a:hover {
             background-color: #8B4513;
-            color: white;
+            color: #F4D03F;
         }
         .produtos {
             display: flex;

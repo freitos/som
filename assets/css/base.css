@@ -31,6 +31,9 @@ body {
     font-weight: bold;
     font-size: 25px;
 }
+.menu a:hover{
+    color: #fff;
+}
 
 .search-cart {
     display: flex;
@@ -52,7 +55,16 @@ body {
     height: 40px;
 }
 
-.kart img {
+/* .kart img {
+    height: 45px;
+} */
+
+/* .header a .kart{
+    height: 35px;
+    cursor: pointer;
+} */
+
+.kart a img{
     height: 45px;
 }
 
@@ -228,6 +240,11 @@ body {
     }
 
     .profile {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .kart {
         margin-left: 0;
         margin-right: 0;
     }

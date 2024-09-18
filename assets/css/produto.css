@@ -134,7 +134,10 @@ body {
     border: #F4D03F;
     border-radius: 20px;
 }
-
+.buy-button:hover{
+    background-color: #8B4513;
+    color: #F4D03F;
+}
 .quantity-control {
     align-self: center;
     margin-bottom: 50px;
@@ -152,6 +155,10 @@ body {
     height: 60px;
     font-size: 30px;
     margin-top: 25px;
+} 
+.quantity-btn:hover{
+    background-color: #F4D03F;
+    color: #8B4513;
 }
 
 .quantity {
