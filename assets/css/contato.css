@@ -11,7 +11,14 @@ body {
     justify-content: space-between;
 }
 
-.header img {
+/* .header img {
+    height: 150px;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+} */
+
+header .logo{
     height: 150px;
     margin-left: 150px;
     margin-bottom: 15px;
@@ -31,9 +38,12 @@ body {
     font-weight: bold;
     font-size: 25px;
 }
+.menu a:hover{
+    color: #fff;
+}
 
 .search-cart {
-    display: flex;
+    /* display: flex; */
     gap: 5px;
     align-items: center;
     margin-right: 100px;
@@ -44,7 +54,7 @@ body {
 }
 
 .profile {
-    margin-left: -170px;
+    /* margin-left: -170px; */
     margin-right: 100px;
 }
 
@@ -52,9 +62,19 @@ body {
     height: 40px;
 }
 
-.kart img {
+/* .kart img {
+    height: 45px;
+} */
+
+/* .header a .kart{
+    height: 35px;
+    cursor: pointer;
+} */
+
+.kart a img{
     height: 45px;
 }
+
 .contatos{
     text-align: center;
     margin: 20px;
