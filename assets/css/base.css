@@ -238,14 +238,35 @@ header .logo{
 @media(max-width: 600px){
     .slider {
         width: 100%;
+        height: 50%;
+    }
+    .banner{
+        height: 50%;
     }
     .slider .slider-area .slider-item .banner img{
-        height: 100%;
+        height: 200%;
         width: 100%;
     }
-    .products-grid {
-        /* display: flex;
-        flex-direction: column; */
+    /* .products-grid {
+         display: flex;
+        flex-direction: column; 
         grid-template-columns: repeat(1, minmax(315px, 1fr)); 
+    } */
+    .produtos{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    .menu{
+        display: none;
+    }
+    /* .produtos {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    } */
 }
