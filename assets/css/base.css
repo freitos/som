@@ -102,10 +102,12 @@ header nav a{
     cursor: pointer;
 } */
 
-.kart a img{
+header .kart{
     height: 45px;
 }
-
+header .ellipse{
+    height: 45px;
+}
 .slider {
     overflow: hidden;
 }
@@ -273,6 +275,10 @@ header nav a{
     header{
         flex-direction: row;
     }
+    header nav{
+        display: none;
+        flex-direction: row;
+    }
     .menu-opener{
         display: none;
     }
@@ -303,11 +309,7 @@ header nav a{
     /* .menu-opener{
         display: none;
     } */
-    /* .produtos {
-        display: flex;
-        justify-content: center;
-        gap: 100px;
-    }  */
+    
       .produtos .produto{
         display: block;
         height: 275px;
@@ -334,6 +336,40 @@ header nav a{
     }
     header .logo{
         height: 80px;
+        margin-left: 25px;
+    }
+    header .kart{
+        height: 25px;
+        margin-right: 10px;
+        margin-left: 70px;
+    }
+    header .ellipse{
+        height: 20px;
+        margin-right: 160px;
+    }
+    .hero .leftside{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .hero .rightside{
+        padding-bottom: 30px;
+    }
+    .hero .rightside img{
+        height: 300px;
     }
     
+    .hero h1{
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .search{
+        padding-bottom: 30px;
+    }
+    .search .title{
+        text-align: center;
+    }
+    .search .sides{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
