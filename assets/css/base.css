@@ -251,6 +251,11 @@ header .ellipse{
     background-color: #fff;
     border-radius: 2px;
 }
+.kart img {
+    height: 45px;
+    float: right;
+    margin-right: 100px;
+}
 
 /* Menu e hambúrguer em telas menores */
 @media (max-width: 600px) {
@@ -269,6 +274,7 @@ header .ellipse{
     }
     .menu-hamburger {
         display: flex; /* Exibe o ícone de hambúrguer */
+        margin-left: 40px;
     }
 
     /* Mostra o menu ao clicar no ícone */
