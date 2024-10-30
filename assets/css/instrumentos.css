@@ -8,30 +8,27 @@ body {
     padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-
-/* .header img {
-    height: 150px;
-    margin-left: 150px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-} */
 
 header .logo{
     height: 150px;
-    margin-left: 150px;
+    margin-left: 10px;
     margin-bottom: 15px;
     margin-top: 15px;
 }
 
-.menu {
+header .menu  {
     display: flex;
-    gap: 80px;
     justify-content: center;
-    margin-left: 15%;
+    align-items: center;
+    margin-left: 100px;
 }
-
+header .linha{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    margin-left: 20%;
+}
 .menu a {
     text-decoration: none;
     color: #8B4513;
@@ -62,16 +59,10 @@ header .logo{
     height: 40px;
 }
 
-/* .kart img {
+header .kart{
     height: 45px;
-} */
-
-/* .header a .kart{
-    height: 35px;
-    cursor: pointer;
-} */
-
-.kart a img{
+}
+header .ellipse{
     height: 45px;
 }
 
@@ -113,9 +104,12 @@ header .logo{
         }
         .produtos {
             display: flex;
+            flex-direction: column; /* Exibe os itens em coluna por padrão (mobile) */
+            gap: 20px;
             justify-content: center;
-            gap: 100px;
-            margin-bottom: 50px;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 100px;
         }
         .produto {
             height: 375px;
@@ -162,4 +156,71 @@ header .logo{
             margin-right: 40px;
             margin-left: 40px;
         }
+        .menu-items {
+            display: flex;
+            align-items: center;
+            gap: 75px;
+        }
         
+        /* Esconde o menu hambúrguer e exibe o menu completo em telas maiores */
+        .menu-hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+        
+        .menu-hamburger span {
+            display: block;
+            width: 30px;
+            height: 6px;
+            background-color: #fff;
+            border-radius: 2px;
+        }
+@media (min-width: 600px) {
+        .produtos {
+            flex-direction: row; /* Exibe os itens em linha para telas maiores */
+            flex-wrap: wrap; /* Permite que itens "quebrem" linha se necessário */
+            gap: 100px;
+            justify-content: space-around;
+        }
+        
+            header .logo{
+                height: 140px;
+                margin-left: 25px;
+            }
+        }
+@media (max-width: 600px) {
+    .menu-items {
+        display: none; /* Esconde o menu completo */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff6df;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        gap: 20px;
+        box-shadow: #000;
+    }
+    .menu-hamburger {
+        display: flex; /* Exibe o ícone de hambúrguer */
+        margin-left: 40px;
+    }
+    /* .kart a img{
+        margin-left: 10000px;
+    } */
+
+    /* Mostra o menu ao clicar no ícone */
+    .menu-items.active {
+        display: flex;
+    }
+    .buttons {
+        display: flex;
+        display: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+    

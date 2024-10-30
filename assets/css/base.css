@@ -276,6 +276,9 @@ header .ellipse{
         display: flex; /* Exibe o ícone de hambúrguer */
         margin-left: 40px;
     }
+    /* .kart a img{
+        margin-left: 10000px;
+    } */
 
     /* Mostra o menu ao clicar no ícone */
     .menu-items.active {
