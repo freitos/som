@@ -184,12 +184,11 @@ header .ellipse{
             gap: 100px;
             justify-content: space-around;
         }
-        
-            header .logo{
-                height: 140px;
-                margin-left: 25px;
-            }
+        header .logo{
+            height: 140px;
+            margin-left: 25px;
         }
+    }
 @media (max-width: 600px) {
     .menu-items {
         display: none; /* Esconde o menu completo */
@@ -222,5 +221,13 @@ header .ellipse{
         justify-content: center;
         gap: 20px;
     }
+    .produtos{
+        gap: 
+    }
 }
-    
+.buttons {
+    display: flex;
+    display: row;
+    justify-content: center;
+    gap: 20px;
+}
