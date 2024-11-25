@@ -8,28 +8,33 @@ body {
     padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-
-/* .header img {
-    height: 150px;
-    margin-left: 150px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-} */
 
 header .logo{
     height: 150px;
-    margin-left: 150px;
+    margin-left: 10px;
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
 
 .menu {
     display: flex;
     gap: 80px;
     justify-content: center;
-    margin-left: 15%;
+}
+header .menu  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+header .linha{
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+   
 }
 
 .menu a {
@@ -48,6 +53,13 @@ header .logo{
     align-items: center;
     margin-right: 100px;
 }
+.linha-nav-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    
+}
 
 .search-cart img {
     height: 10px;
@@ -55,26 +67,38 @@ header .logo{
 
 .profile {
     /* margin-left: -170px; */
-    margin-right: 100px;
 }
 
 .profile img {
     height: 40px;
 }
 
-/* .kart img {
-    height: 45px;
-} */
-
-/* .header a .kart{
-    height: 35px;
-    cursor: pointer;
-} */
 
 .kart a img{
     height: 45px;
 }
+/* Estilos básicos */
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
 
+/* Esconde o menu hambúrguer e exibe o menu completo em telas maiores */
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-hamburger span {
+    display: block;
+    width: 30px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 2px;
+}
 .produtos {
     margin: 0;
     margin-bottom: 100px;
@@ -145,6 +169,8 @@ header .logo{
 .buttons{
     flex-direction: row;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 .buy-button {
     align-self: center;
@@ -166,8 +192,8 @@ header .logo{
 .quantity-control {
     align-self: center;
     margin-bottom: 50px;
-    margin-left: 550px;
-    margin-top: -120px;
+    margin-left: 400px;
+    margin-right: 200px;
 }
 
 .quantity-btn {
@@ -218,4 +244,125 @@ header .logo{
 .social img{
     margin-right: 40px;
     margin-left: 40px;
+}
+@media (max-width: 1550px) {
+    .produtos {
+        margin-left: 0px;
+    }
+    .buy-button {
+        margin-left: 120px;
+    }
+    .product-price {
+        margin-left: 125px
+    }
+    .product-name {
+        margin-left: 320px;
+    }
+    .quantity-control {
+        margin-left: 500px;
+        margin-right: 0px;
+    }
+    
+}
+@media (max-width: 1040px) {
+    .menu-items {
+        gap: 5%;
+    }
+    .menu a {
+        font-size: 20px;
+    }
+    .product-info {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .produtos {
+        margin-left: 0px;
+        flex-direction: row; /* Exibe os itens em linha para telas maiores */
+        flex-wrap: wrap; /* Permite que itens "quebrem" linha se necessário */
+        gap: 10px;
+        justify-content: space-around;
+        display: flex;
+    }
+    .buy-button {
+        margin-left: 0px;
+    }
+    .product-price {
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+    .product-name {
+        margin-left: 0px;
+    }
+    .quantity-control {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .product-description {
+        margin-left: 0%;
+    }
+    .buttons{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+    }
+
+}
+@media (max-width: 600px) {
+    .menu-items {
+        display: none; /* Esconde o menu completo */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 50px;
+        background-color: #fff6df;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        gap: 20px;
+        box-shadow: #000;
+        z-index: 1;
+    }
+    .menu-hamburger {
+        display: flex; /* Exibe o ícone de hambúrguer */
+
+    }
+    /* .kart a img{
+        margin-left: 10000px;
+    } */
+
+    /* Mostra o menu ao clicar no ícone */
+    .menu-items.active {
+        display: flex;
+    }
+    header .linha{
+        display: flex;
+        justify-content: start; /* Centraliza horizontalmente */
+        align-items: start;
+    }
+
+    .produtos {
+        flex-direction: row; /* Exibe os itens em linha para telas maiores */
+        flex-wrap: wrap; /* Permite que itens "quebrem" linha se necessário */
+        gap: 10px;
+        justify-content: space-around;
+    }
+    
+
+    .banner{
+        height: 75%;
+    }
+
+    header .logo{
+        height: 140px;
+        margin-left: 25px;
+    }
+    .main-image {
+        width: 400px;
+        height: 400px;
+    }
+    .product-images{
+        width: 404px;
+        height: 404px;
+    }
 }

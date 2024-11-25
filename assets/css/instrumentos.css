@@ -8,6 +8,7 @@ body {
     padding: 15px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 header .logo{
@@ -21,13 +22,12 @@ header .menu  {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
+   
 }
 header .linha{
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;    /* Centraliza verticalmente */
-    margin-left: 20%;
 }
 .menu a {
     text-decoration: none;
@@ -38,7 +38,12 @@ header .linha{
 .menu a:hover{
     color: #fff;
 }
+.linha-nav-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 
+}
 .search-cart {
     /* display: flex; */
     gap: 5px;
@@ -52,7 +57,7 @@ header .linha{
 
 .profile {
     /* margin-left: -170px; */
-    margin-right: 100px;
+    
 }
 
 .profile img {
@@ -186,7 +191,7 @@ header .ellipse{
         }
         header .logo{
             height: 140px;
-            margin-left: 25px;
+        
         }
     }
 @media (max-width: 600px) {
@@ -222,7 +227,8 @@ header .ellipse{
         gap: 20px;
     }
     .produtos{
-        gap: 
+        gap: 10px;
+        margin-bottom: 0px;
     }
 }
 .buttons {
