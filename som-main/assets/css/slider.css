@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estrutura do container do slider */
+.slide-container {
+    width: 100vw;
+    height: auto; /* Ajuste proporcional da altura */
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+div .slide-container {
+    width: 100vw;
+    height: auto; /* Ajuste proporcional da altura */
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container {
+    width: 200vw; /* 2 imagens, cada uma ocupando 100vw */
+    height: auto;
+    display: flex;
+    animation: slideAnimation 9s infinite ease-in-out; /* Ciclo completo em 9 segundos */
+}
+
+.slider-image {
+    width: 100vw;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem preencha sem distorção */
+}
+
+/* Controles (botões de navegação) */
+.button-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider-button {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-button:hover {
+    background-color: #888;
+}
+
+/* Animação principal */
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-100vw); }
+    100% { transform: translateX(0); }
+}
+
+/* Navegação manual */
+#slider-image1:target ~ .image-container {
+    animation: none;
+    transform: translateX(0);
+}
+
+#slider-image2:target ~ .image-container {
+    animation: none;
+    transform: translateX(-100vw);
+}
+
+/* Reset automático para voltar à animação */
+#reset-target:target ~ .image-container {
+    animation: slideAnimation 9s infinite ease-in-out;
+}
+
+.slider{
+    z-index: -9;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .slide-container {
+        height: 40vh; /* Altura reduzida para dispositivos menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-container {
+        height: 30vh;
+    }
+
+    .slider-button {
+        height: 10px;
+        width: 10px;
+    }
+}

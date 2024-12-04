@@ -1,91 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Som Paulo</title>
+    <!-- <link rel="stylesheet" href="assets/css/base.css"> -->
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
     <link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
 </head>
+
 <body>
 
-    <header class="header">
-        <img src="./assets/img/logo.png" alt="">
-        <nav class="menu">
-            <a href="index.html">Home</a>
-            <a href="instrumentos.html">Instrumentos</a>
-            <a href="historia.html">História</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-        <div class="search-cart">
+<!-- <header class="header">
+    <img class="logo" src="assets/img/logo.png" alt="Logo Som Paulo">
+    <nav class="menu">
+        <div class="menu-mobile">
             <div class="menu-opener">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-                <div class="close-icon">
-                <span></span>
-                <span></span>
-                </div>
-        </div>
-        <div class="kart">
-            <a href="carrinho.html"></a><img src="./assets/img/Shopping Cart.svg" alt="">
-        </div>
-        <div class="profile">
-            <a href="cadastro.html"></a><img src="./assets/img/Ellipse 5.svg" alt="">
-        </div>
-    </div>
-    </header>
-    <div class="slider">
-        <input checked id="slider-1" name="slider" type="radio"/>
-        <input id="slider-2" name="slider" type="radio"/>
-    <div class="slider-area">
-        <div class="slider-item">
-            <div class="banner">
-                <img src="assets/img/1.png" alt="">
+            <div class="menu-items">
+                <a href="index.html">Home</a>
+                <a href="instrumentos.html">Instrumentos</a>
+                <a href="historia.html">História</a>
+                <a href="contato.html">Contato</a>
             </div>
         </div>
-        <div class="slider-item">
-            <div class="banner">
-                <img src="assets/img/2.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="slider-nav">
-        <label class="n1" for="slider-1"></label>
-        <label class="n2" for="slider-2"></label>
-    </div>
-    </div>
+    </nav>
+</header> -->
 
-    <section class="produtos-section">
-        <h1>Produtos</h1>
-        <div class="produtos">
-            <div class="produto"><a href=""><img src="assets/img/instrumentos/gui.jpg" alt="">
-            <p>Guitarra Elétrica Jackson Js Series Rhoads Js32</p></a>
+<header class="header">
+    <img class="logo" src="assets/img/logo.png" alt="Logo Som Paulo">
+    <div class="linha">
+        <nav class="menu">
+            <div class="menu-items">
+                <a href="index.html">Home</a>
+                <a href="instrumentos.html">Instrumentos</a>
+                <a href="historia.html">História</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <!-- Ícone do menu hambúrguer -->
+            <div class="menu-hamburger" id="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+    <div class="linha-nav-icon">
+    <a href="carrinho.html" >
+        <img src="./assets/img/Shopping Cart.svg" alt="" class="kart">
+    </a>
+    <div class="profile">
+        <a href="cadastro.html"><img src="./assets/img/Ellipse 5.svg" alt="" class="ellipse"></a>
+    </div></div>
+</header>
+
+<div class="slider">
+    <div class="slide-container">
+        <span id="slider-image1"></span>
+        <span id="slider-image2"></span>
+        <span id="reset-target"></span>
+        <div class="image-container">
+            <img class="slider-image" src="assets/img/1.png" alt="Banner Image 1">
+            <img class="slider-image" src="assets/img/2.png" alt="Banner Image 2">
         </div>
-            <div class="produto"><a href=""><img src="assets/img/instrumentos/saxofone.jpg" alt="">
-            <p>Saxofone Sax Shelter Tenor Laqueado Dourado</p></a>
+        <div class="button-container">
+            <a href="#slider-image1" class="slider-button"></a>
+            <a href="#slider-image2" class="slider-button"></a>
+            <a href="#reset-target" class="reset-button"></a>
         </div>
-            <div class="produto"><a href=""><img src="assets/img/instrumentos/batera.jpg" alt="">
-            <p >Bateria Acústica Premium Dx722 Completa Preta</p></a>
+    </div>
+</div>
+
+
+<section class="produtos-section grid-center">
+    <h1>Produtos</h1>
+    <div class="produtos" id="produtos">
+        
+        <!-- <div class="produto">
+            <a href="produtos.html">
+                <img src="assets/img/instrumentos/gui.jpg" alt="Guitarra Elétrica Jackson">
+                <p>Guitarra Elétrica Jackson Js Series Rhoads Js32</p>
+            </a>
         </div>
+        <div class="produto">
+            <a href="#">
+                <img src="assets/img/instrumentos/saxofone.jpg" alt="Saxofone Shelter Tenor">
+                <p>Saxofone Sax Shelter Tenor Laqueado Dourado</p>
+            </a>
         </div>
-    </section>
-   
-            <footer class="rodape">
-                <div class="social">
-                    <a href="">
-                        <img src="assets/img/social/Insta.png" alt="Insta"/>
-                    </a>
-                    <a href="">
-                        <img src="assets/img/social/what.png" alt="Whatsapp"/>
-                    </a>
-                    <a href="">
-                        <img src="assets/img/social/Gmail.png" alt="Gamail"/>
-                    </a>
-                </div>
-                <p> O Instrumento programado pra você</p>
-            </footer>
+        <div class="produto">
+            <a href="#">
+                <img src="assets/img/instrumentos/batera.jpg" alt="Bateria Acústica Premium">
+                <p>Bateria Acústica Premium Dx722 Completa Preta</p>
+            </a>
+        </div> -->
+    </div>
+</section>
+
+<footer class="rodape">
+    <div class="social">
+        <a href="#"><img src="assets/img/social/Insta.png" alt="Instagram"></a>
+        <a href="#"><img src="assets/img/social/what.png" alt="WhatsApp"></a>
+        <a href="#"><img src="assets/img/social/Gmail.png" alt="Gmail"></a>
+    </div>
+    <p>O Instrumento programado para você</p>
+</footer>
+
+<script type="text/javascript" src="assets/js/scriptindex.js"></script>
+<script src="assets/js/index.js"></script>
 </body>
+
 </html>
 

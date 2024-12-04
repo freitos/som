@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Conta</title>
-    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/estilocadas.css">
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
-
 <body>
-
     <div class="container">
-        <div class="form-container">
-            <a href="index.html" class="home-icon"><img src="./assets/img/Home.svg" alt=""></a>
-            <h1>Criar Conta</h1>
-            <form action="#">
-                <label for="nome">Digite seu nome completo:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Digite seu email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="senha">Digite sua senha:</label>
-                <input type="password" id="senha" name="senha" required>
-
-                <label for="confirmar-senha">Confirme sua senha:</label>
-                <input type="password" id="confirmar-senha" name="confirmar-senha" required>
-
-                <button type="submit">Criar</button>
-            </form>
-            <a href="login.html" class="login-link">Já tenho conta</a>
-        </div>
-        <div class="image-container">
-            <img src="./assets/img/logo.png" alt="SP Logo">
+        <div class="content first-content">
+            <div class="first-column">
+                <img src="./assets/img/logo.png" alt="SP Logo">
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Criar Conta</h2>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Name" required>
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">Criar</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <img src="./assets/img/logo.png" alt="SP Logo">
+                <button id="signup" class="btn btn-primary">Criar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Login conta</h2>
+                <form class="form">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-second">Entrar</button>
+                </form>
+            </div>
         </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>

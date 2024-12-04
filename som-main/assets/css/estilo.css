@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+body{
+   background-color:rgb(255, 255, 255);
+   font-family: 'Open Sans', sans-serif;
+}
+.imgdoc{
+	padding-left:20px;
+	padding-right:20px;
+}
+.carrosf{
+	border-style: solid; 
+	border-color: #2B91D8; 
+	background-color:#2B91D8; 
+	border-radius: 3px; 
+	color: white;
+	font-family: sans-serif;
+	width: 150px; 
+	height: 35px;
+}
+/*navbar*/
+.logomeio{
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    margin-top: -150px;
+    margin-left: 455px;
+}
+
+.yep{
+    
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+.yep:hover{
+    background-color: #FFA949;
+    border-radius: 8px;
+}
+.yep2{
+    
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 0px;
+    
+    align-items: center;
+}
+.yep2:hover{
+    background-color: #FFA949;
+    border-radius: 8px;
+}
+.yep3{
+    
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin-top: 105px;
+    margin-left: 0px;
+    
+    align-items: center;
+}
+.yep3:hover{
+    background-color: #FFA949;
+    border-radius: 8px;
+}
+.yep4{
+    
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 0px;
+    
+    align-items: center;
+}
+.yep4:hover{
+    background-color: #FFA949;
+    border-radius: 8px;
+}
+.yep5{
+    
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 0px;
+    
+    align-items: center;
+}
+.yep5:hover{
+    background-color: #FFA949;
+    border-radius: 8px;
+}
+/* Ico menu */
+.ico-menu{
+    position:fixed;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #f0f0f0;
+    
+    
+  }
+  
+  /* Menu escondido o diplay none faz o sub menu desaparecer*/
+  .sub-menu{
+    width: 165px;
+    height: 103vh;
+    display: none;
+    position: absolute;
+    margin-top: 40px;
+    
+    background: #000;
+  text-shadow:
+    1px 1px 0 #000;
+    margin-top: 0.1px;
+    border-radius: 5px;
+    
+    margin-left: -2px;
+    
+    
+  }
+  /*passar o mouse no icone o display none para block */
+  .menu:hover .sub-menu {
+    display: block;
+  
+    
+    
+    
+  
+  }
+  .nav__mask {
+    width: 80px;
+    height: 80px;
+    background: rgb(250,155,0);
+    background: linear-gradient(38deg, rgba(250,155,0,1) 0%, rgba(112,112,112,1) 50%, rgba(87,87,87,1) 100%);
+    border-radius: 1.5rem;
+    margin-top: 60px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  /* Estilização do link */
+  .linkin{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-top: 10px;
+    margin: 10px;
+  }
+  .linkin i{
+    margin-right: 25px;
+    margin: 15px;
+    
+
+  }
+ .linkin:hover{
+    background-color: #f0f0f0;
+ }
+   
+  .link{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-top: 20px;
+    margin: 10px;
+  }
+  .link i{
+    margin-right: 25px;
+    margin: 15px;
+  }
+  
+
+  
+  .link2{
+      display: flex;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      margin-top: 20px;
+      margin: 10px;
+    }
+    .link2 i{
+      margin-right: 25px;
+      margin: 15px;
+    }
+  
+    .link3{
+      display: flex;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      margin-top: 20px;
+      margin: 10px;
+    }
+    .link3 i{
+        margin-right: 25px;
+        margin: 15px;
+    }
+  
+  .link4{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin-top: 20px;
+    margin: 10px;
+    }
+    .link4 i{
+        margin-right: 25px;
+        margin: 15px;
+    }
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 1170px;
+   
+  }
+
+
+
+
+
+
+
+
+
+  .geralic{
+    padding-left:-90px;
+    padding-top: -45px;
+}
+.cadas{
+    margin-left: 1040px;
+    margin-top: 15.8px;
+    position: fixed;
+    
+
+   
+}
+.cadas:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.local{
+
+    margin-left: 1080px;
+    margin-top: 15.8px;
+    position: fixed;
+    
+
+}
+.local:hover{
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+.pesq{
+     margin-left: 1108px;
+    margin-top:-3px;
+    position: fixed;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    
+    display: flex;
+   
+    align-items: center;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color:#fff;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+}
+.search-btn{
+    width: 25px;
+    height: 40px;
+    border-radius: 50%;
+    
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pesq:hover > .search-txt {
+    cursor: pointer;
+   border: solid #FFA949;
+    width: 110px;
+    padding: 0 6px;
+    border-radius: 40px;
+   
+}
+
+
+  /*imagem do carro*/
+ .imagemfn{
+    width: 101.46%;
+    height: 490px;
+    margin-left: -10px;
+    margin-top: -9px;
+ }
+ /*linha laranja*/
+.linhaa{
+    width: 101.46%;
+ height: 1px;
+ margin-top: -3.5px;
+ margin-left: -10px;
+ background: rgb(255, 191, 0);
+}
+/*Ordenar*/
+.ord{
+    margin-top: 10px;
+    width: 7%;
+    height: 25px;
+    border-radius: 10%;
+    border-color: rgb(255, 191, 0);
+}
+/*2° Linha laranja*/
+.linhaa2{
+
+        width: 101.46%;
+     height: 1px;
+     margin-top: -5px;
+     margin-left: -10px;
+     background: rgb(255, 191, 0);
+}
+/*Ofertas em destaque*/
+.oftxt{
+    text-align: center;
+}
+/*borda do catalago*/
+.borda{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-around;
+    
+    width: 80%;
+ height: 230px;
+ margin-top: -3.5px;
+ background-color: rgb(255, 255, 255);
+ border-width: 1px;
+ border-style: solid;
+ border-radius: 20px;
+ border-color:  rgb(255, 191, 0);
+}
+/*Primeira imagem*/
+.imagens1{
+    width:180px;
+    height: 120px;
+    margin-right: -150px;
+    margin-top: -65px;
+    
+ 
+}
+/*2° imagem*/
+.imagens2{
+  
+   margin-left: 138px;
+    width: 145px;
+    height: 90px;
+    margin-top: -65px;
+    
+}
+/*3° imagem*/
+.imagens3{
+   
+    width: 160px;
+    height: 145px;
+    margin-right: 0px;
+    margin-top: -55px;
+    
+}
+/*O borda do 1° tipo de carro */
+.cont1{
+    border-style: solid;
+    border-color: #2B91D8;
+    background-color:#2B91D8;
+    border-radius: 3px;
+    width: 150px;
+    height: 30px;
+    margin-top: -100px;
+    margin-left: -650px;
+    justify-content:center ;
+    align-items: center;
+    display: flex;
+    
+}
+/*O borda do 2° tipo de carro */
+.cont2{
+    border-style: solid;
+    border-color: #2B91D8;
+    background-color:#2B91D8;
+    border-radius: 3px;
+    width: 150px;
+    height: 30px;
+    margin-top: -30.5px;
+    margin-left: 20px;
+   
+    justify-content:center ;
+    align-items: center;
+    display: flex;
+ 
+}  
+/*O borda do 3° tipo de carro */
+.cont3{
+    border-style: solid;
+    border-color: #2B91D8;
+    background-color:#2B91D8;
+    border-radius: 3px;
+    width: 150px;
+    height: 30px;
+    margin-top: -32px;
+    margin-left: 650px;
+    justify-content:center ;
+    align-items: center;
+    display: flex;
+}
+/*Texto de todos os nomes dos carros */
+.text1{
+    
+
+    color: #f0f0f0;
+    font-size: 13px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.com1{
+    
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    margin-top: -155px;
+    margin-left: 210px;
+}
+.com1:hover{
+    border: #000000 solid 1px;
+    border-radius: 8px;
+
+   
+}
+.com2{
+     
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    margin-top: -155px;
+    margin-left: 542px;
+}
+.com2:hover{
+    border: #000000 solid 1px;
+    border-radius: 8px;
+
+   
+
+}
+.com3{
+     
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    margin-top: -155px;
+    margin-left: 860px;
+}
+.com3:hover{
+    border: #000000 solid 1px;
+    border-radius: 8px;
+
+   
+
+}
+
+/*rodape*/
+.rodape{
+    display: flex;
+     background-color: black;
+     width: 101.46%;
+  height: 265px;
+  margin-top: 0px;
+  color:#f0f0f0;
+  margin-left:-10px;
+  
+  
+ /*parte cinza do rodape*/
+ }
+ .rodape2{
+     justify-content:space-around;
+     background-color: rgb(88, 88, 88);
+     width: 101.46%;
+  height: 5px;
+  margin-top: 150px;
+  color:#000000;
+  margin-left:-10px;
+  
+ }
+ /*texto do pais*/
+ .rt{
+     font-weight: bold;
+     margin-left: 10px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ /*bandeira*/
+ .band{
+     width: 35px;
+     margin-top: 50px;
+     display: flex;
+     align-items: flex-start;
+     justify-items: start;
+     margin-left: -165px;
+ }
+ /*idioma*/
+ .tbra{
+     margin-top: -25px;
+     margin-left: -115px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ /*contato*/
+ .rt2{
+  font-weight: bold;
+  margin-top: 130px;
+  margin-left: -170px;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ /*icone do email*/
+ .icoema{
+  margin-top: 165px;
+  margin-left: -65px;
+ }
+ /*texto do email*/
+ .tico{
+  margin-left: 30px;
+  margin-top: -19.3px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ /*rede sociais*/
+ .rt3{
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left:955px;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ /*texto das rede social*/
+ .trs{
+     margin-left:672px;
+ margin-top: 45px;
+ font-family: Arial, Helvetica, sans-serif;
+ }
+ /*icones*/
+ .icowhat{
+  border-radius: 5px;
+  border-color: white;
+  border-style: solid;
+  width: 45px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 45px;
+  background-color: white;
+  margin-left: -190px;
+  margin-top: 100px;
+ 
+ }
+ .icowhat:hover{
+     cursor: pointer;
+     transition: 0.3s;
+     background: #aeaeae;
+     border-color: #aeaeae;
+ }
+ .iconinst{
+     border-radius: 5px;
+     border-color: white;
+     border-style: solid;
+     width: 45px;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     height: 45px;
+     background-color: white;
+     margin-left: 15px;
+     margin-top: 100px;
+ }
+ .iconinst:hover{
+     cursor: pointer;
+     transition: 0.3s;
+     background: #aeaeae;
+     border-color: #aeaeae;
+ }
+ .icontwit{
+     border-radius: 5px;
+  border-color: white;
+  border-style: solid;
+  width: 45px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 45px;
+  background-color: white;
+  margin-top: 100px;
+  margin-left: 15px;
+ }
+ .icontwit:hover{
+     cursor: pointer;
+     transition: 0.3s;
+     background: #aeaeae;
+     border-color: #aeaeae;
+ }
+ .iconface{
+ border-radius: 5px;
+  border-color: white;
+  border-style: solid;
+  width: 45px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 45px;
+  background-color: white;
+  margin-top: 100px;
+  margin-left: 15px;
+ }
+ .iconface:hover{
+     cursor: pointer;
+     transition: 0.3s;
+     background: #aeaeae;
+     border-color: #aeaeae;
+ }
+
+ /*Logo no rodape*/
+ .iconrp{
+     position: absolute;
+     width: 250px;
+     margin-left: 200px;
+     margin-top: -10px;
+     margin-right: 150px;
+ }
+  /*A imagem do fundo da logo no canto*/
+.logobai {
+    width: 120px;
+    height: 70px;
+    margin-top: 500px;
+  margin-left:-5px;
+  position: fixed;   
+
+
+}
+/*logo no canto*/
+.logoba {
+   width: 60px;
+   height: 60px;
+  margin-top: 506px;
+  margin-left:5px;
+  position: fixed;    
+
+}
+ footer{
+     background-color: black;
+     color: white;
+     width:104.65%;
+     height:60px;
+     display: flex;
+     align-items: center;
+     justify-content:space-around;
+     margin-left:-50px;
+ }
+ 
+ nav{
+     width: 101%;
+     height: 50px;
+    
+     display: flex;
+     position: fixed;
+     margin-top: -10px;
+     margin-left: -9px;
+     transition: 0.25s;
+ }
+ /*js do nav bar*/
+ nav.rolagem{
+     background-color: #1c1a24;
+ }
+ @media screen and (max-width: 500px) {
+     
+ }

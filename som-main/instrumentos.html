@@ -8,44 +8,38 @@
     <link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
 </head>
 <body>
-
     <header class="header">
-        <img src="./assets/img/logo.png" alt="">
-        <nav class="menu">
-            <a href="index.html">Home</a>
-            <a href="instrumentos.html">Instrumentos</a>
-            <a href="historia.html">História</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-        <div class="search-cart">
-            <div class="menu-opener">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-                <div class="close-icon">
-                <span></span>
-                <span></span>
+        <img class="logo" src="assets/img/logo.png" alt="Logo Som Paulo">
+        <div class="linha">
+            <nav class="menu">
+                <div class="menu-items">
+                    <a href="index.html">Home</a>
+                    <a href="instrumentos.html">Instrumentos</a>
+                    <a href="historia.html">História</a>
+                    <a href="contato.html">Contato</a>
                 </div>
+                <!-- Ícone do menu hambúrguer -->
+                <div class="menu-hamburger" id="menu-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
-        <div class="kart">
-            <img src="./assets/img/Shopping Cart.svg" alt="">
-        </div>
+        <div class="linha-nav-icon">
+        <a href="carrinho.html" >
+            <img src="./assets/img/Shopping Cart.svg" alt="" class="kart">
+        </a>
         <div class="profile">
-            <a href="cadastro.html"></a><img src="./assets/img/Ellipse 5.svg" alt="">
-        </div>
-    </div>
+            <a href="cadastro.html"><img src="./assets/img/Ellipse 5.svg" alt="" class="ellipse"></a>
+        </div></div>
     </header>
     <div class="container">
         <h1>Instrumentos</h1>
-        <div class="buttons">
-            <a href="">Cordas</a>
-            <a href="">Sopro</a>
-            <a href="">Percussão</a>
-        </div>
     </div>
-        <div class="produtos">
-            <div class="produto"><a href=""><img src="assets/img/instrumentos/gui.jpg" alt="">
+    <section class="produtos-section grid-center">
+        <div class="produtos" id="produtos">
+            <!--<div class="produto"><a href=""><img src="assets/img/instrumentos/gui.jpg" alt="">
                 <p>Guitarra Elétrica Jackson Js Series Rhoads Js32</p></a>
             </div>
             <div class="produto"><a href=""><img src="assets/img/instrumentos/saxofone.jpg" alt="">
@@ -54,8 +48,7 @@
             <div class="produto"><a href=""><img src="assets/img/instrumentos/batera.jpg" alt="">
                 <p>Bateria Acústica Premium Dx722 Completa Preta</p></a>
             </div>
-        </div>
-        <div class="produtos">
+        
             <div class="produto"><a href=""><img src="assets/img/instrumentos/alto.jpg" alt="">
                 <p>Contrabaixo Ibanez 5 Cordas Canhoto Sr305ebl</p></a>
             </div>
@@ -64,23 +57,18 @@
             </div>
             <div class="produto"><a href=""><img src="assets/img/instrumentos/cuica.png" alt="">
                 <p>Cuica Com Pele Animal Izzo 10 30cm Aço Inox</p></a>
-            </div>
+            </div>-->
         </div>
-        
-        <footer class="rodape">
-            <div class="social">
-                <a href="">
-                    <img src="assets/img/social/Insta.png" alt="Insta"/>
-                </a>
-                <a href="">
-                    <img src="assets/img/social/what.png" alt="Whatsapp"/>
-                </a>
-                <a href="">
-                    <img src="assets/img/social/Gmail.png" alt="Gamail"/>
-                </a>
-            </div>
-            <p> O Instrumento programado pra você</p>
-        </footer>
-    
+    </section>
+    <footer class="rodape">
+        <div class="social">
+            <a href="#"><img src="assets/img/social/Insta.png" alt="Instagram"></a>
+            <a href="#"><img src="assets/img/social/what.png" alt="WhatsApp"></a>
+            <a href="#"><img src="assets/img/social/Gmail.png" alt="Gmail"></a>
+        </div>
+        <p>O Instrumento programado para você</p>
+    </footer>
+<script type="text/javascript" src="assets/js/scriptindex.js"></script>
+<script src="assets/js/instrumentos.js"></script>
 </body>
 </html>
