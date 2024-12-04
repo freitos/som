@@ -30,6 +30,9 @@ header .linha{
     align-items: center;    /* Centraliza verticalmente */
    
 }
+.menu{
+    z-index: 10;
+}
 .menu a {
     text-decoration: none;
     color: #8B4513;
@@ -69,79 +72,6 @@ header .kart{
 }
 header .ellipse{
     height: 45px;
-}
-.slider {
-    overflow: hidden;
-}
-
-.slide-container {
-    width: 100vw;
-    height: 100vh;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-.image-container {
-    width: 200vw; /* 2 imagens, cada uma ocupando 100vw */
-    height: 500px;
-    display: flex;
-    animation: slideAnimation 9s infinite ease-in-out; /* Ciclo completo em 9 segundos */
-}
-
-/* Estilo das imagens */
-.slider-image {
-    width: 100vw;
-    height: 500px;
-    object-fit: cover; /* Garante que a imagem preencha sem distorção */
-}
-
-/* Controles (botões de navegação) */
-.button-container {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.slider-button {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: #8B4513;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.slider-button:hover {
-    background-color: #fff;
-}
-
-/* Animação principal */
-@keyframes slideAnimation {
-    0% { transform: translateX(0); }
-    49% { transform: translateX(-100vw); }
-    51% { transform: translateX(-100vw); }
-    100% { transform: translateX(0); }
-}
-
-/* Regras para navegação manual */
-#slider-image1:target ~ .image-container {
-    animation: none;
-    transform: translateX(0);
-}
-
-#slider-image2:target ~ .image-container {
-    animation: none;
-    transform: translateX(-100vw);
-}
-
-/* Reset automático para voltar à animação */
-#reset-target:target ~ .image-container {
-    animation: slideAnimation 9s infinite ease-in-out;
 }
 
 

@@ -7,23 +7,16 @@ body {
     padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: auto;
+    justify-content: space-evenly;
 }
-
-/* .header img {
-    height: 150px;
-    margin-left: 150px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-} */
 
 header .logo{
     height: 150px;
-    
+    margin-left: 10px;
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
 header .menu  {
     display: flex;
     justify-content: center;
@@ -280,6 +273,10 @@ h1 {
         display: flex;
         justify-content: start; /* Centraliza horizontalmente */
         align-items: start;
+    }
+    .cart-container{
+        margin: 10px;
+        padding: 15px;
     }
     .cart-item{
         flex-direction: column;
